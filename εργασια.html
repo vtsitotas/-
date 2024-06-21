@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Integration</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: #f5f5dc; /* Light beige background color */
+        }
+        .container-fluid {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute space between sections */
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            margin-bottom: 10px; /* Margin between video and chat */
+        }
+        .video-frame {
+            background-color: #000; /* Black background for the video frame */
+            height: 100%; /* Full height within its column */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px; /* Margin between video and chat */
+        }
+        .chat-panel {
+            background-color: #fff; /* White background for the chat panel */
+            height: 100%; /* Full height within its column */
+            overflow-y: auto;
+            padding: 10px;
+            margin-left: 10px; /* Margin between video and chat */
+        }
+        .user-areas {
+            height: 25%; /* Fixed height for the user areas */
+            display: flex;
+            margin-top: 10px; /* Margin between chat and user areas */
+        }
+        .user-area {
+            background-color: #e0e0e0;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px; /* Margin between user areas */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid p-4">
+    <div class="main-content">
+        <div class="col-md-8 video-frame">
+            <!-- Video content goes here -->
+            <video controls width="100%" height="100%">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="col-md-4 chat-panel">
+            <!-- Chat content goes here -->
+            <div class="pb-2 mb-2">
+                <strong>User1:</strong> Hello, how are you?
+            </div>
+            <div class="pb-2 mb-2">
+                <strong>User2:</strong> I'm good, thanks! What about you?
+            </div>
+            <div class="pb-2 mb-2">
+                <strong>User3:</strong> Hi everyone!
+            </div>
+            <div class="pb-2 mb-2">
+                <strong>User4:</strong> Hello! Excited for the video?
+            </div>
+            <div class="pb-2 mb-2">
+                <strong>User5:</strong> Absolutely! Can't wait to start.
+            </div>
+        </div>
+    </div>
+    
+    <div class="user-areas">
+        <div class="user-area">
+            <!-- User Area 1 content goes here -->
+            User Area 1
+        </div>
+        <div class="user-area">
+            <!-- User Area 2 content goes here -->
+            User Area 2
+        </div>
+        <div class="user-area">
+            <!-- User Area 3 content goes here -->
+            User Area 3
+        </div>
+        <div class="user-area">
+            <!-- User Area 4 content goes here -->
+            User Area 4
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
